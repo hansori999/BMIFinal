@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -182,7 +182,7 @@
                                     <constraint firstItem="pKb-Aw-bRR" firstAttribute="centerX" secondItem="2bP-BX-W2F" secondAttribute="centerX" id="PqM-Tg-iTN"/>
                                     <constraint firstItem="WgM-xn-Q5l" firstAttribute="centerY" secondItem="2bP-BX-W2F" secondAttribute="centerY" id="PxD-CX-BV0"/>
                                     <constraint firstItem="9bH-Xv-i7r" firstAttribute="centerX" secondItem="WgM-xn-Q5l" secondAttribute="centerX" id="Q9Y-T5-fMc"/>
-                                    <constraint firstItem="pKb-Aw-bRR" firstAttribute="leading" secondItem="u4g-F3-IyX" secondAttribute="trailing" constant="75" id="Snj-Tq-hBY"/>
+                                    <constraint firstItem="pKb-Aw-bRR" firstAttribute="leading" secondItem="u4g-F3-IyX" secondAttribute="trailing" constant="50" id="Snj-Tq-hBY"/>
                                     <constraint firstItem="9bH-Xv-i7r" firstAttribute="width" secondItem="WgM-xn-Q5l" secondAttribute="width" id="Tv9-b0-grV"/>
                                     <constraint firstItem="WvH-6a-N8B" firstAttribute="centerY" secondItem="s1T-Xm-w3e" secondAttribute="centerY" id="Uv6-QG-QC4"/>
                                     <constraint firstItem="EVb-7K-87x" firstAttribute="centerY" secondItem="9bH-Xv-i7r" secondAttribute="centerY" id="Vm8-bv-DGn"/>
