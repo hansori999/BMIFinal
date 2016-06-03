@@ -404,7 +404,7 @@
         <!--About View Controller-->
         <scene sceneID="lMk-N1-9Lq">
             <objects>
-                <viewController id="LzE-uR-yJz" customClass="BMIAboutViewController" customModule="BMI3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController providesPresentationContextTransitionStyle="YES" id="LzE-uR-yJz" customClass="BMIAboutViewController" customModule="BMI3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1fP-17-xpz"/>
                         <viewControllerLayoutGuide type="bottom" id="FrE-5H-1tY"/>
@@ -479,6 +479,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="5gN-C3-fWS"/>
                                 <exclude reference="0Sy-GQ-pPJ"/>
                             </mask>
                             <mask key="constraints">
@@ -492,6 +493,7 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
+                                <include reference="5gN-C3-fWS"/>
                                 <include reference="0Sy-GQ-pPJ"/>
                             </mask>
                             <mask key="constraints">
@@ -503,6 +505,7 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
+                                <include reference="5gN-C3-fWS"/>
                                 <include reference="0Sy-GQ-pPJ"/>
                             </mask>
                             <mask key="constraints">
