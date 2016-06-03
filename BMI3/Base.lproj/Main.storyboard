@@ -401,10 +401,10 @@
             </objects>
             <point key="canvasLocation" x="261" y="300"/>
         </scene>
-        <!--View Controller-->
+        <!--About View Controller-->
         <scene sceneID="lMk-N1-9Lq">
             <objects>
-                <viewController id="LzE-uR-yJz" sceneMemberID="viewController">
+                <viewController id="LzE-uR-yJz" customClass="BMIAboutViewController" customModule="BMI3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1fP-17-xpz"/>
                         <viewControllerLayoutGuide type="bottom" id="FrE-5H-1tY"/>
@@ -412,13 +412,6 @@
                     <view key="view" contentMode="scaleToFill" id="TgY-ID-2em">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Sy-GQ-pPJ">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Dismiss"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="158" y="750" width="54" height="30"/>
-                                </variation>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5gN-C3-fWS">
                                 <rect key="frame" x="34" y="209" width="332" height="346"/>
                                 <subviews>
@@ -429,6 +422,10 @@
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="49" y="0.0" width="194" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="292" height="21"/>
                                         </variation>
                                     </label>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Square" translatesAutoresizingMaskIntoConstraints="NO" id="mTv-Cx-XZA">
@@ -447,15 +444,34 @@
                                                 <include reference="nmW-EA-nOa"/>
                                             </mask>
                                         </variation>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="61" width="292" height="270"/>
+                                        </variation>
                                     </imageView>
                                 </subviews>
                                 <variation key="heightClass=regular-widthClass=compact" alignment="center" axis="vertical" misplaced="YES">
                                     <rect key="frame" x="54" y="155" width="292" height="311"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular" axis="vertical" misplaced="YES" spacing="40">
+                                    <rect key="frame" x="254" y="234" width="292" height="331"/>
+                                </variation>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Sy-GQ-pPJ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Dismiss"/>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                    <rect key="frame" x="377" y="750" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="doDismiss:" destination="LzE-uR-yJz" eventType="touchUpInside" id="OA5-vy-jN0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="5gN-C3-fWS" firstAttribute="centerY" secondItem="TgY-ID-2em" secondAttribute="centerY" id="Awj-3Z-Q8u"/>
+                            <constraint firstItem="5gN-C3-fWS" firstAttribute="centerX" secondItem="TgY-ID-2em" secondAttribute="centerX" id="JT3-Ug-Fjx"/>
                             <constraint firstItem="5gN-C3-fWS" firstAttribute="centerX" secondItem="TgY-ID-2em" secondAttribute="centerX" id="ZIU-a6-TEF"/>
                             <constraint firstItem="FrE-5H-1tY" firstAttribute="top" secondItem="0Sy-GQ-pPJ" secondAttribute="bottom" constant="20" id="aId-Lq-qQb"/>
                             <constraint firstItem="0Sy-GQ-pPJ" firstAttribute="centerX" secondItem="TgY-ID-2em" secondAttribute="centerX" id="flO-rd-Mly"/>
@@ -466,9 +482,11 @@
                                 <exclude reference="0Sy-GQ-pPJ"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="flO-rd-Mly"/>
+                                <exclude reference="Awj-3Z-Q8u"/>
+                                <exclude reference="JT3-Ug-Fjx"/>
                                 <exclude reference="ZIU-a6-TEF"/>
                                 <exclude reference="mTI-Ve-Uns"/>
-                                <exclude reference="flO-rd-Mly"/>
                                 <exclude reference="aId-Lq-qQb"/>
                             </mask>
                         </variation>
@@ -477,9 +495,20 @@
                                 <include reference="0Sy-GQ-pPJ"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="flO-rd-Mly"/>
                                 <include reference="ZIU-a6-TEF"/>
                                 <include reference="mTI-Ve-Uns"/>
+                                <include reference="aId-Lq-qQb"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="0Sy-GQ-pPJ"/>
+                            </mask>
+                            <mask key="constraints">
                                 <include reference="flO-rd-Mly"/>
+                                <include reference="Awj-3Z-Q8u"/>
+                                <include reference="JT3-Ug-Fjx"/>
                                 <include reference="aId-Lq-qQb"/>
                             </mask>
                         </variation>
